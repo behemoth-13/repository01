@@ -3,7 +3,6 @@ package com.javarush.test.level34.lesson15.big01.model;
 import com.javarush.test.level34.lesson15.big01.controller.EventListener;
 
 import java.nio.file.Paths;
-import java.util.Set;
 
 /**
  * Created by Alex on 02.10.2016.
@@ -12,7 +11,7 @@ public class Model {
     public static final int FIELD_SELL_SIZE = 20;
     private EventListener eventListener;
     private GameObjects gameObjects;
-    private int currentLevel = 1;
+    private int currentLevel = 2;
     private LevelLoader levelLoader = new LevelLoader(Paths.get("H:\\инстал\\JavaRushHomeWork\\src\\com\\javarush\\test\\level34\\lesson15\\big01\\res\\levels.txt"));
 
     public void setEventListener(EventListener eventListener) {
