@@ -1,7 +1,6 @@
 package com.javarush.test.level20.lesson10.bonus01;
 
 
-import java.util.ArrayList;
 import java.util.Vector;
 
 /* Алгоритмы-числа
@@ -10,16 +9,17 @@ import java.util.Vector;
 находить все числа, удовлетворяющие следующему критерию:
 число S равно сумме его цифр, возведенных в M степень
 getNumbers должен возвращать все такие числа в порядке возрастания
-
 Пример искомого числа:
 370 = 3*3*3 + 7*7*7 + 0*0*0
 8208 = 8*8*8*8 + 2*2*2*2 + 0*0*0*0 + 8*8*8*8
-
 На выполнение дается 10 секунд и 50 МБ памяти.
+
+Calculating time: 170296
+
 */
 public class Solution {
     public static void main(String[] args) {
-        int number = 1000000;
+        int number = 1000000000;
         long freeMemory = Runtime.getRuntime().freeMemory();
         long startTime = System.currentTimeMillis();
         int[] a = getNumbers(number);
